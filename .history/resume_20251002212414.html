@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Àäng Portfolio</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="resume.html" class="nav-link active">Resume</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="reflections.html" class="nav-link">Reflections</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-container">
+        <section class="page-header">
+            <h1>Resume / CV</h1>
+            <p>View and download my curriculum vitae</p>
+        </section>
+
+        <section class="resume-content">
+            <div class="resume-actions">
+                <a href="your-resume.pdf" download class="btn btn-primary">📥 Download PDF</a>
+                <a href="your-resume.pdf" target="_blank" class="btn btn-secondary">🔍 Open in New Tab</a>
+            </div>
+
+            <div class="pdf-viewer">
+                <iframe src="your-resume.pdf" title="Resume PDF"></iframe>
+                <div class="pdf-fallback">
+                    <p>📄 Your resume will appear here once you upload your PDF file.</p>
+                    <p class="fallback-instruction">
+                        To add your resume: Replace "your-resume.pdf" with the actual filename of your CV in the project folder.
+                    </p>
+                </div>
+            </div>
+
+            <div class="resume-summary">
+                <h2>Quick Summary</h2>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <h3>Education</h3>
+                        <p><strong>Universitas Airlangga</strong></p>
+                        <p>Your Major | Expected Graduation: Year</p>
+                    </div>
+                    <div class="summary-item">
+                        <h3>Skills</h3>
+                        <ul>
+                            <li>Skill 1</li>
+                            <li>Skill 2</li>
+                            <li>Skill 3</li>
+                            <li>Skill 4</li>
+                        </ul>
+                    </div>
+                    <div class="summary-item">
+                        <h3>Experience</h3>
+                        <p><strong>Position/Role</strong></p>
+                        <p>Organization | Year</p>
+                    </div>
+                    <div class="summary-item">
+                        <h3>Achievements</h3>
+                        <ul>
+                            <li>Achievement 1</li>
+                            <li>Achievement 2</li>
+                            <li>Achievement 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
