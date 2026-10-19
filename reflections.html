@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reflections - My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Reflections - Àäng Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=3.8">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">Àäng Portfolio</a>
+            <a href="index.html" class="nav-logo">Àang Portfolio</a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
@@ -18,7 +21,7 @@
                 <li><a href="reflections.html" class="nav-link active">Reflections</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" aria-label="Toggle Navigation">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -27,80 +30,245 @@
     </nav>
 
     <main class="page-container">
+        <!-- Page Header -->
         <section class="page-header">
-            <h1>Reflections</h1>
-            <p>Thoughts on my learning journey at Universitas Airlangga</p>
+            <div class="header-badge">Academic &amp; Professional Synthesis</div>
+            <h1>Reflections &amp; Growth Philosophy</h1>
+            <p>Analytical convictions on full-stack software craftsmanship, civic production constraints, and multidisciplinary leadership at Universitas Airlangga.</p>
         </section>
 
-        <section class="reflections-content">
-            <article class="reflection-main">
-                <h2>My Learning Journey</h2>
-                <div class="reflection-text">
-                    <p>
-                       Bridging Code, Design, and Leadership
-                        My portfolio is more than a collection of projects; it's a testament to the belief that the best digital solutions sit at the intersection of technical mastery, thoughtful design, and effective execution. This is the core philosophy I have cultivated throughout my academic and organizational journey
-                    </p>
-                    <p>
-                       1. The Interplay of Code and Design
-As an Informatic Engineering student, I quickly realized that strong code is only half the battle. My interest in UI/UX Design and Visual Communication stems from the need to translate complex logic—such as the Backward Chaining mechanism in the InHealth project—into a simple, intuitive user experience. My work on interfaces, from the Blibli Concept to the InHealth Chatbot, taught me how to apply Information Architecture principles to guide users seamlessly, proving that a beautiful system must also be a usable one.
-                    </p>
-                    <p>
-                        2. From Logic to Leadership
-My journey extends beyond the screen. My roles as a Logistics Project Coordinator and an HR Development Staff were instrumental in sharpening my soft skills. I learned that team leadership requires the same structured, problem-solving approach as debugging a program. Managing budgets, coordinating logistics, and designing comprehensive training programs developed my ability to handle complex operational challenges and ensure projects are delivered effectively, on time, and collaboratively.
-                    </p>
-                    <p>
-                        3. The Power of Perspective
-My experience as a Freelance Writer for Kompasiana adds a unique dimension. The rigor of research-based writing on complex topics, like my analysis on BPJS waivers, is directly applicable to my engineering career: it enhances my analytical skills, forces clarity in communication, and helps me articulate the 'why' behind every technical decision.
-                    </p>
-                </div>
-            </article>
-
-            <div class="reflection-cards">
-                <div class="reflection-card highlight-card-blue">
-                    <h3>🌟 Key Highlights</h3>
-                    <ul>
-                        <li>Multidisciplinary Aptitude</li>
-                        <li>Full-Spectrum Development</li>
-                        <li>Strategic Leadership</li>
-                        <li>Analytical Communication</li>
-                        
-                    </ul>
+        <div class="reflections-content">
+            <!-- 1. Three Core Architectural Convictions (Epiphany Cards) -->
+            <section class="reflections-block">
+                <div class="reflections-section-header">
+                    <div class="header-badge">Core Convictions</div>
+                    <h2 class="section-title">Architectural Epiphanies</h2>
+                    <p class="section-subtitle">Three foundational principles cultivated through academic coursework, civic production platforms, and analytical writing.</p>
                 </div>
 
-                <div class="reflection-card challenge-card">
-                    <h3>💪 Challenges Overcome</h3>
-                    <ul>
-                        <li>Balancing Functionality vs. Usability</li>
-                        <li>Managing Cross-Disciplinary Timelines</li>
-                        <li>Designing for Scale and Security</li>
-                        
-                    </ul>
+                <div class="insight-grid">
+                    <!-- Card 1 -->
+                    <article class="insight-card">
+                        <div class="insight-top">
+                            <span class="insight-code">EP-01 // PARADIGM</span>
+                            <div class="insight-icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="insight-title">Code Integrity Meets Empathic UI/UX</h3>
+                        <p class="insight-body">
+                            As an Informatics Engineering student, I realized that robust backend algorithms are only half the battle. In projects like InHealth (an expert system medical diagnostic tool), implementing backward-chaining inference algorithms was meaningless without an intuitive, friction-free interface for users. High-performing systems must equal effortless usability—Information Architecture bridges complex logic into human clarity.
+                        </p>
+                        <div class="insight-takeaway">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                            <span>Principle: Technical complexity should remain invisible to the user.</span>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="insight-card">
+                        <div class="insight-top">
+                            <span class="insight-code">EP-02 // PRODUCTION</span>
+                            <div class="insight-icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="insight-title">Civic Mission-Critical &amp; Real Constraints</h3>
+                        <p class="insight-body">
+                            My software engineering internship at BPS Kota Surabaya (IPDS Division) grounded my engineering in reality. Building the Multi-Agent WhatsApp Helpdesk (WANI CRM) and the eSurvey Usaha enterprise enumeration platform meant dealing with real operational constraints: asynchronous webhook concurrency, zero data loss under intermittent field connectivity, and multi-user data integrity.
+                        </p>
+                        <div class="insight-takeaway">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                            <span>Principle: Software reliability is earned in edge cases and network drops.</span>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="insight-card">
+                        <div class="insight-top">
+                            <span class="insight-code">EP-03 // ANALYSIS</span>
+                            <div class="insight-icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="insight-title">The Strategic "Why" &amp; Analytical Writing</h3>
+                        <p class="insight-body">
+                            Authoring analytical articles on Kompasiana covering societal tech policy and ethical AI paradigms has proven to be an indispensable engineering practice. Rigorous research-based writing demands deep critical thinking, forces precision in vocabulary, and trains me to articulate the strategic purpose behind every architecture, database schema, and interface layout before writing code.
+                        </p>
+                        <div class="insight-takeaway">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                            <span>Principle: Clear writing produces clear code and sound architecture.</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- 2. Technical & Leadership Retrospective Matrix -->
+            <section class="reflections-block">
+                <div class="reflections-section-header">
+                    <div class="header-badge">Retrospective Matrix</div>
+                    <h2 class="section-title">The Engineering &amp; Leadership Triad</h2>
+                    <p class="section-subtitle">A transparent review of core architectural capabilities, technical friction overcome in production, and leadership growth.</p>
                 </div>
 
-                <div class="reflection-card growth-card">
-                    <h3>📈 Personal Growth</h3>
-                    <ul>
-                        <li>The Power of Clarity</li>
-                        <li>From Theory to Practice</li>
-                        <li>A Commitment to Impact</li>
-                        
-                    </ul>
-                </div>
-            </div>
+                <div class="retro-matrix">
+                    <!-- Card 1: Core Architectural Competencies -->
+                    <div class="retro-card">
+                        <div class="retro-header">
+                            <div class="retro-icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+                            </div>
+                            <div class="retro-title-wrap">
+                                <span class="retro-card-title">Architectural Mastery</span>
+                                <span class="retro-card-sub">What I Build &amp; Ship</span>
+                            </div>
+                        </div>
+                        <div class="retro-items">
+                            <div class="retro-item">
+                                <div class="retro-item-header">
+                                    <span class="retro-bullet"></span>
+                                    <span class="retro-item-name">Full-Stack Reactivity</span>
+                                </div>
+                                <p class="retro-item-desc">Engineered type-safe, reactive web platforms with Next.js 16, Laravel 11, React 19, and TypeScript.</p>
+                            </div>
+                            <div class="retro-item">
+                                <div class="retro-item-header">
+                                    <span class="retro-bullet"></span>
+                                    <span class="retro-item-name">Cross-Platform Mobile</span>
+                                </div>
+                                <p class="retro-item-desc">Developed high-performance client experiences using Flutter &amp; Dart with clean architecture state patterns.</p>
+                            </div>
+                            <div class="retro-item">
+                                <div class="retro-item-header">
+                                    <span class="retro-bullet"></span>
+                                    <span class="retro-item-name">Geospatial &amp; Real-Time</span>
+                                </div>
+                                <p class="retro-item-desc">Integrated Leaflet GIS spatial heatmaps and Socket.IO real-time channels for live operational dashboards.</p>
+                            </div>
+                        </div>
+                    </div>
 
-            <article class="reflection-future">
-                <h2>Looking Forward</h2>
-                <p>
-                   My commitment is to continuous improvement. 
-                   I am passionate about mastering technologies like Flutter and JavaScript, 
-                   and eager to leverage my multidisciplinary background—combining coding, design, and 
-                   leadership—to tackle real-world problems and create impactful, user-centered digital products.
-                </p>
-                <p>
-                   
-                </p>
-            </article>
-        </section>
+                    <!-- Card 2: Production Friction & Trade-Offs -->
+                    <div class="retro-card">
+                        <div class="retro-header">
+                            <div class="retro-icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                            </div>
+                            <div class="retro-title-wrap">
+                                <span class="retro-card-title">Production Friction</span>
+                                <span class="retro-card-sub">Engineering Trade-Offs Overcome</span>
+                            </div>
+                        </div>
+                        <div class="retro-items">
+                            <div class="retro-item">
+                                <div class="retro-item-header">
+                                    <span class="retro-bullet"></span>
+                                    <span class="retro-item-name">Concurrency vs. Race Conditions</span>
+                                </div>
+                                <p class="retro-item-desc">Resolved WhatsApp webhook race conditions in WANI CRM through transactional database locks and queue dispatches.</p>
+                            </div>
+                            <div class="retro-item">
+                                <div class="retro-item-header">
+                                    <span class="retro-bullet"></span>
+                                    <span class="retro-item-name">Offline-First Resilience</span>
+                                </div>
+                                <p class="retro-item-desc">Engineered client-side caching in eSurvey Usaha to safeguard statistical records during erratic field cellular reception.</p>
+                            </div>
+                            <div class="retro-item">
+                                <div class="retro-item-header">
+                                    <span class="retro-bullet"></span>
+                                    <span class="retro-item-name">Information Density vs. Ergonomics</span>
+                                </div>
+                                <p class="retro-item-desc">Restructured cluttered administrative data tables into clean, glanceable bento telemetry cards.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Leadership Ethos & Human Coordination -->
+                    <div class="retro-card">
+                        <div class="retro-header">
+                            <div class="retro-icon-box">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <div class="retro-title-wrap">
+                                <span class="retro-card-title">Leadership Ethos</span>
+                                <span class="retro-card-sub">Human-Centric Execution</span>
+                            </div>
+                        </div>
+                        <div class="retro-items">
+                            <div class="retro-item">
+                                <div class="retro-item-header">
+                                    <span class="retro-bullet"></span>
+                                    <span class="retro-item-name">Talent Onboarding &amp; Mentorship</span>
+                                </div>
+                                <p class="retro-item-desc">Nurtured new members in HIMTI UNAIR PSDM, facilitating workshops and team alignment across project lifecycles.</p>
+                            </div>
+                            <div class="retro-item">
+                                <div class="retro-item-header">
+                                    <span class="retro-bullet"></span>
+                                    <span class="retro-item-name">Cross-Disciplinary Translation</span>
+                                </div>
+                                <p class="retro-item-desc">Trained in translating technical trade-offs to non-engineering civil servants and operational project leads.</p>
+                            </div>
+                            <div class="retro-item">
+                                <div class="retro-item-header">
+                                    <span class="retro-bullet"></span>
+                                    <span class="retro-item-name">Continuous Craft Culture</span>
+                                </div>
+                                <p class="retro-item-desc">Instilling a mindset of defensive architecture, clean modular code, and comprehensive documentation over shortcuts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Strategic Horizon Bento Deck (Looking Forward) -->
+            <section class="reflections-block">
+                <article class="horizon-card">
+                    <div class="horizon-content">
+                        <div class="header-badge">Strategic Directives</div>
+                        <h2>Strategic Horizon &amp; Future Vision</h2>
+                        <p>
+                            As I advance into the senior phase of my D4 Informatics Engineering degree at Universitas Airlangga, my objective is continuous refinement. I am actively expanding my mastery of distributed cloud systems, modern containerization with Docker, and reactive cross-platform mobile architecture.
+                        </p>
+                        <p>
+                            My ambition remains grounded in execution: fusing rigorous backend software engineering, human-centered UI/UX design, and empathetic team leadership to craft digital solutions that deliver lasting value to real users and organizations.
+                        </p>
+                    </div>
+
+                    <div class="horizon-stats-panel">
+                        <div class="horizon-metrics-row">
+                            <div class="horizon-stat-box">
+                                <span class="horizon-stat-val">7th</span>
+                                <span class="horizon-stat-lbl">Semester Standing</span>
+                            </div>
+                            <div class="horizon-stat-box">
+                                <span class="horizon-stat-val">D4 RPLT</span>
+                                <span class="horizon-stat-lbl">Univ. Airlangga</span>
+                            </div>
+                            <div class="horizon-stat-box">
+                                <span class="horizon-stat-val">Full-Stack</span>
+                                <span class="horizon-stat-lbl">Primary Track</span>
+                            </div>
+                            <div class="horizon-stat-box">
+                                <span class="horizon-stat-val">Surabaya</span>
+                                <span class="horizon-stat-lbl">Base Location</span>
+                            </div>
+                        </div>
+
+                        <div class="horizon-actions">
+                            <a href="projects.html" class="btn btn-primary">
+                                Explore Production Works
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                            <a href="contact.html" class="btn btn-secondary">
+                                Get In Touch
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
     </main>
 
     <footer class="footer">

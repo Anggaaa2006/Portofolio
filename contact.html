@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Contact - Àäng Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=3.8">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">Àäng Portfolio</a>
+            <a href="index.html" class="nav-logo">Àang Portfolio</a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
@@ -18,7 +21,7 @@
                 <li><a href="reflections.html" class="nav-link">Reflections</a></li>
                 <li><a href="contact.html" class="nav-link active">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" aria-label="Toggle Navigation">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -27,69 +30,232 @@
     </nav>
 
     <main class="page-container">
+        <!-- Page Header -->
         <section class="page-header">
-            <h1>Get In Touch</h1>
-            <p>I'd love to hear from you! Feel free to reach out through any of these channels.</p>
+            <div class="header-badge">Direct Communication &amp; Inquiries</div>
+            <h1>Let's Connect &amp; Collaborate</h1>
+            <p>Reach out for software engineering inquiries, full-stack &amp; mobile opportunities, open-source projects, or academic discussions at Universitas Airlangga.</p>
         </section>
 
         <section class="contact-content">
-            <div class="contact-intro">
-                <p>
-                    Whether you have a question, want to collaborate on a project, or just want to connect, 
-                    I'm always open to new opportunities and conversations. Don't hesitate to reach out!
-                </p>
-            </div>
-
+            <!-- Contact Channels Grid with Large Authentic App Logos -->
             <div class="contact-grid">
-                <a href="mailto:awaulangga14@gmail.com" class="contact-card">
-                    <div class="contact-icon">📧</div>
-                    <h3>Email</h3>
-                    <p>awaulangga14@gmail.com</p>
-                    <span class="contact-action">Send an email →</span>
-                </a>
+                <!-- 1. Gmail / Email -->
+                <div class="contact-card">
+                    <div class="contact-app-logo">
+                        <svg width="48" height="48" viewBox="0 0 48 48">
+                            <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"/>
+                            <path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"/>
+                            <polygon fill="#e53935" points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"/>
+                            <path fill="#c62828" d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C8.132,7.553,5.654,8.232,4.743,10.158L3,12.298z"/>
+                            <path fill="#fbc02d" d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341c1.744-1.306,4.222-0.627,5.133,1.299L45,12.298z"/>
+                        </svg>
+                    </div>
+                    <h3>Electronic Mail</h3>
+                    <div class="contact-handle">awaulangga14@gmail.com</div>
+                    <p class="contact-desc">The primary channel for formal software engineering inquiries, graduation thesis collaboration, project RFPs, or comprehensive technical discussions.</p>
+                    <div class="contact-card-actions">
+                        <a href="mailto:awaulangga14@gmail.com" class="contact-action-btn">
+                            <span>Compose Email</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </a>
+                        <button type="button" class="btn-copy-direct" data-copy="awaulangga14@gmail.com" title="Copy email address">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                            <span>Copy</span>
+                        </button>
+                    </div>
+                </div>
 
-                <a href="https://www.linkedin.com/in/awaulanggadwia" target="_blank" class="contact-card">
-                    <div class="contact-icon">💼</div>
-                    <h3>LinkedIn</h3>
-                    <p>Connect professionally</p>
-                    <span class="contact-action">View profile →</span>
-                </a>
+                <!-- 2. WhatsApp -->
+                <div class="contact-card">
+                    <div class="contact-app-logo">
+                        <svg width="48" height="48" viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="23" fill="#25D366"/>
+                            <path fill="#ffffff" d="M35 27.6c-.5-.3-3-1.5-3.5-1.7-.5-.2-.8-.3-1.2.3-.4.6-1.4 1.7-1.7 2.1-.3.4-.7.4-1.2.1-.5-.3-2.2-.8-4.2-2.6-1.6-1.4-2.6-3.1-2.9-3.7-.3-.5 0-.8.2-1.1.2-.2.5-.6.8-1 .2-.3.3-.6.5-.9.2-.3.1-.6 0-.9-.1-.3-.9-2.2-1.3-3-.4-.8-.8-.7-1.2-.7h-1c-.3 0-1 .1-1.5.7-.5.5-2 1.9-2 4.6 0 2.7 2 5.3 2.3 5.7.3.4 3.9 6 9.4 8.4 1.3.6 2.3.9 3.1 1.2 1.3.4 2.5.3 3.5.2 1.1-.2 3.1-1.3 3.5-2.5.4-1.2.4-2.3.3-2.5-.1-.2-.4-.4-.9-.7z"/>
+                        </svg>
+                    </div>
+                    <h3>WhatsApp Direct</h3>
+                    <div class="contact-handle">+62 878-6506-6457</div>
+                    <p class="contact-desc">Ideal for swift coordination, real-time messaging, immediate project consultations, and mobile follow-ups.</p>
+                    <div class="contact-card-actions">
+                        <a href="https://wa.me/6287865066457?text=Hello%20Angga,%20I%20saw%20your%20portfolio..." target="_blank" rel="noopener noreferrer" class="contact-action-btn">
+                            <span>Open Chat</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </a>
+                        <button type="button" class="btn-copy-direct" data-copy="+6287865066457" title="Copy phone number">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                            <span>Copy</span>
+                        </button>
+                    </div>
+                </div>
 
-                <a href="https://wa.me/6287865066457" target="_blank" class="contact-card">
-                    <div class="contact-icon">💬</div>
-                    <h3>WhatsApp</h3>
-                    <p>+62 878-6506-6457</p>
-                    <span class="contact-action">Send message →</span>
-                </a>
+                <!-- 3. LinkedIn -->
+                <div class="contact-card">
+                    <div class="contact-app-logo">
+                        <svg width="48" height="48" viewBox="0 0 48 48">
+                            <rect width="48" height="48" rx="10" fill="#0A66C2"/>
+                            <path fill="#ffffff" d="M14.5 19.5h-5v16h5v-16zm-2.5-8c-1.6 0-2.9 1.3-2.9 2.9s1.3 2.9 2.9 2.9 2.9-1.3 2.9-2.9-1.3-2.9-2.9-2.9zm13 8h-4.8v16h4.8v-8.3c0-4.4 5.7-4.8 5.7 0v8.3h4.8v-9.8c0-7.6-8.2-7.3-10.5-3.6v-2.6z"/>
+                        </svg>
+                    </div>
+                    <h3>LinkedIn Network</h3>
+                    <div class="contact-handle">in/awaulanggadwia</div>
+                    <p class="contact-desc">Detailed professional chronology, academic background at Universitas Airlangga, project milestones, and verified credentials.</p>
+                    <div class="contact-card-actions">
+                        <a href="https://www.linkedin.com/in/awaulanggadwia" target="_blank" rel="noopener noreferrer" class="contact-action-btn">
+                            <span>Connect Profile</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
 
-                <a href="https://instagram.com/anggaariy_" target="_blank" class="contact-card">
-                    <div class="contact-icon">📸</div>
-                    <h3>Instagram</h3>
-                    <p>@anggaariy_</p>
-                    <span class="contact-action">Follow me →</span>
-                </a>
+                <!-- 4. GitHub -->
+                <div class="contact-card">
+                    <div class="contact-app-logo">
+                        <svg width="48" height="48" viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="23" fill="#181717"/>
+                            <path fill="#ffffff" d="M24 9C15.7 9 9 15.7 9 24c0 6.6 4.3 12.3 10.3 14.3.8.1 1-.3 1-.7v-2.7c-4.2.9-5.1-2-5.1-2-.7-1.7-1.7-2.1-1.7-2.1-1.4-.9.1-.9.1-.9 1.5.1 2.3 1.6 2.3 1.6 1.3 2.3 3.5 1.6 4.4 1.2.1-1 .5-1.6.9-2-3.3-.4-6.8-1.7-6.8-7.5 0-1.7.6-3 1.6-4.1-.2-.4-.7-1.9.2-4 0 0 1.3-.4 4.2 1.6 1.2-.3 2.5-.5 3.8-.5s2.6.2 3.8.5c2.9-2 4.2-1.6 4.2-1.6.9 2.1.3 3.6.2 4 1 1.1 1.6 2.5 1.6 4.1 0 5.8-3.5 7.1-6.9 7.5.5.5 1 1.4 1 2.8V37.6c0 .4.3.9 1.1.7C34.7 36.3 39 30.6 39 24c0-8.3-6.7-15-15-15z"/>
+                        </svg>
+                    </div>
+                    <h3>GitHub Workspace</h3>
+                    <div class="contact-handle">github.com/Anggaaa2006</div>
+                    <p class="contact-desc">Inspect production-grade code, open-source repositories, Flutter mobile clients, Laravel web apps, and full commit histories.</p>
+                    <div class="contact-card-actions">
+                        <a href="https://github.com/Anggaaa2006" target="_blank" rel="noopener noreferrer" class="contact-action-btn">
+                            <span>Inspect Repos</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
 
-                <a href="https://github.com/Anggaaa2006" target="_blank" class="contact-card">
-                    <div class="contact-icon">💻</div>
-                    <h3>GitHub</h3>
-                    <p>View my code</p>
-                    <span class="contact-action">See projects →</span>
-                </a>
+                <!-- 5. Instagram -->
+                <div class="contact-card">
+                    <div class="contact-app-logo">
+                        <svg width="48" height="48" viewBox="0 0 48 48">
+                            <defs>
+                                <linearGradient id="igAppGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#fdf497"/>
+                                    <stop offset="15%" stop-color="#fdf497"/>
+                                    <stop offset="35%" stop-color="#fd5949"/>
+                                    <stop offset="50%" stop-color="#d6249f"/>
+                                    <stop offset="100%" stop-color="#285AEB"/>
+                                </linearGradient>
+                            </defs>
+                            <rect width="48" height="48" rx="12" fill="url(#igAppGrad)"/>
+                            <path fill="#ffffff" d="M24 16.5c-4.1 0-7.5 3.4-7.5 7.5s3.4 7.5 7.5 7.5 7.5-3.4 7.5-7.5-3.4-7.5-7.5-7.5zm0 12.4c-2.7 0-4.9-2.2-4.9-4.9s2.2-4.9 4.9-4.9 4.9 2.2 4.9 4.9-2.2 4.9-4.9 4.9zm9.2-13.1c-.9 0-1.6.7-1.6 1.6s.7 1.6 1.6 1.6 1.6-.7 1.6-1.6-.7-1.6-1.6-1.6zm4.6 4.7c-.1-2.1-.6-4-2.1-5.5-1.5-1.5-3.4-2-5.5-2.1-2.2-.1-8.8-.1-11 0-2.1.1-4 .6-5.5 2.1-1.5 1.5-2 3.4-2.1 5.5-.1 2.2-.1 8.8 0 11 .1 2.1.6 4 2.1 5.5 1.5 1.5 3.4 2 5.5 2.1 2.2.1 8.8.1 11 0 2.1-.1 4-.6 5.5-2.1 1.5-1.5 2-3.4 2.1-5.5.1-2.2.1-8.8 0-11zm-3.6 13.6c-.4 1.1-1.3 1.9-2.4 2.4-1.8.7-5.9.5-8 .5s-6.2.2-8-.5c-1.1-.4-1.9-1.3-2.4-2.4-.7-1.8-.5-5.9-.5-8s-.2-6.2.5-8c.4-1.1 1.3-1.9 2.4-2.4 1.8-.7 5.9-.5 8-.5s6.2-.2 8 .5c1.1.4 1.9 1.3 2.4 2.4.7 1.8.5 5.9.5 8s.2 6.2-.5 8z"/>
+                        </svg>
+                    </div>
+                    <h3>Instagram Feed</h3>
+                    <div class="contact-handle">@anggaariy_</div>
+                    <p class="contact-desc">Behind-the-scenes university life at Universitas Airlangga, student leadership activities with HIMTI UNAIR, and design experiments.</p>
+                    <div class="contact-card-actions">
+                        <a href="https://instagram.com/anggaariy_" target="_blank" rel="noopener noreferrer" class="contact-action-btn">
+                            <span>Follow Feed</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
 
-                <a href="https://twitter.com/Nggaalpacino" target="_blank" class="contact-card">
-                    <div class="contact-icon">🐦</div>
-                    <h3>X</h3>
-                    <p>@Nggaalpacino</p>
-                    <span class="contact-action">Follow updates →</span>
-                </a>
+                <!-- 6. X (Twitter) -->
+                <div class="contact-card">
+                    <div class="contact-app-logo">
+                        <svg width="48" height="48" viewBox="0 0 48 48">
+                            <rect width="48" height="48" rx="10" fill="#000000" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+                            <path fill="#ffffff" d="M30 13h4.7l-10.2 11.6 12 15.9h-9.4l-7.4-9.7-8.4 9.7H6.5l10.9-12.5L6 13h9.7l6.7 8.9L30 13zm-1.7 24.8h2.6L16.5 15.6h-2.8l14.6 22.2z"/>
+                        </svg>
+                    </div>
+                    <h3>X (formerly Twitter)</h3>
+                    <div class="contact-handle">@Nggaalpacino</div>
+                    <p class="contact-desc">Thoughts on developer tooling, system architecture choices, emerging framework updates, and tech community highlights.</p>
+                    <div class="contact-card-actions">
+                        <a href="https://twitter.com/Nggaalpacino" target="_blank" rel="noopener noreferrer" class="contact-action-btn">
+                            <span>Read Updates</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div class="contact-cta">
-                <h2>Let's Collaborate!</h2>
-                <p>
-                    I'm always interested in hearing about new projects, opportunities, or just having a conversation 
-                    about shared interests. Whether you're a fellow student, professor, or professional, I'd love to connect!
-                </p>
+            <!-- Executive Availability & Collaboration Bento Deck -->
+            <div class="contact-bento-deck">
+                <div class="contact-deck-content">
+                    <div class="channel-status" style="margin-bottom: 1.2rem;">
+                        <span class="radar-ping-wrap">
+                            <span class="radar-wave"></span>
+                            <span class="radar-dot"></span>
+                        </span>
+                        <span>Available for Full-Stack &amp; Mobile Roles</span>
+                    </div>
+                    <h2>Ready to Build Impactful Software Together?</h2>
+                    <p>
+                        Currently in my final academic year of Software Engineering Technology (D4 RPLT) at Universitas Airlangga. With end-to-end production experience in civic survey software (eSurvey Usaha), CRM architectures (WANI CRM), and cross-platform Flutter applications, I bring disciplined engineering, defensive architecture, and user-centric clarity to every project.
+                    </p>
+                    <div class="contact-spec-list">
+                        <span class="contact-spec-item">📍 Surabaya, East Java, ID</span>
+                        <span class="contact-spec-item">⏰ Timezone: UTC+7 (WIB)</span>
+                        <span class="contact-spec-item">🎓 Universitas Airlangga</span>
+                        <span class="contact-spec-item">⚡ Full-Stack &amp; Mobile</span>
+                    </div>
+                </div>
+
+                <div class="contact-deck-card">
+                    <div class="deck-card-header">
+                        <span class="deck-card-title">Direct Outreach Hub</span>
+                        <span class="deck-card-status">
+                            <span class="radar-dot"></span>
+                            <span>Direct Response</span>
+                        </span>
+                    </div>
+                    <div class="deck-channels-quick">
+                        <a href="mailto:awaulangga14@gmail.com" class="quick-channel-item">
+                            <div class="quick-channel-info">
+                                <div class="quick-channel-icon">
+                                    <svg width="20" height="20" viewBox="0 0 48 48">
+                                        <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"/>
+                                        <path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"/>
+                                        <polygon fill="#e53935" points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="quick-channel-label">Email Outreach</div>
+                                    <div class="quick-channel-val">awaulangga14@gmail.com</div>
+                                </div>
+                            </div>
+                            <svg class="quick-channel-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </a>
+
+                        <a href="https://wa.me/6287865066457?text=Hello%20Angga,%20I%20saw%20your%20portfolio..." target="_blank" rel="noopener noreferrer" class="quick-channel-item">
+                            <div class="quick-channel-info">
+                                <div class="quick-channel-icon">
+                                    <svg width="20" height="20" viewBox="0 0 48 48">
+                                        <circle cx="24" cy="24" r="23" fill="#25D366"/>
+                                        <path fill="#ffffff" d="M35 27.6c-.5-.3-3-1.5-3.5-1.7-.5-.2-.8-.3-1.2.3-.4.6-1.4 1.7-1.7 2.1-.3.4-.7.4-1.2.1-.5-.3-2.2-.8-4.2-2.6-1.6-1.4-2.6-3.1-2.9-3.7-.3-.5 0-.8.2-1.1.2-.2.5-.6.8-1 .2-.3.3-.6.5-.9.2-.3.1-.6 0-.9-.1-.3-.9-2.2-1.3-3-.4-.8-.8-.7-1.2-.7h-1c-.3 0-1 .1-1.5.7-.5.5-2 1.9-2 4.6 0 2.7 2 5.3 2.3 5.7.3.4 3.9 6 9.4 8.4 1.3.6 2.3.9 3.1 1.2 1.3.4 2.5.3 3.5.2 1.1-.2 3.1-1.3 3.5-2.5.4-1.2.4-2.3.3-2.5-.1-.2-.4-.4-.9-.7z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="quick-channel-label">WhatsApp Fast-Track</div>
+                                    <div class="quick-channel-val">+62 878-6506-6457</div>
+                                </div>
+                            </div>
+                            <svg class="quick-channel-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/awaulanggadwia" target="_blank" rel="noopener noreferrer" class="quick-channel-item">
+                            <div class="quick-channel-info">
+                                <div class="quick-channel-icon">
+                                    <svg width="20" height="20" viewBox="0 0 48 48">
+                                        <rect width="48" height="48" rx="10" fill="#0A66C2"/>
+                                        <path fill="#ffffff" d="M14.5 19.5h-5v16h5v-16zm-2.5-8c-1.6 0-2.9 1.3-2.9 2.9s1.3 2.9 2.9 2.9 2.9-1.3 2.9-2.9-1.3-2.9-2.9-2.9zm13 8h-4.8v16h4.8v-8.3c0-4.4 5.7-4.8 5.7 0v8.3h4.8v-9.8c0-7.6-8.2-7.3-10.5-3.6v-2.6z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="quick-channel-label">LinkedIn Message</div>
+                                    <div class="quick-channel-val">in/awaulanggadwia</div>
+                                </div>
+                            </div>
+                            <svg class="quick-channel-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

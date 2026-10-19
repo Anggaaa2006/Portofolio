@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Projects - Àäng Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=3.8">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">Àäng Portfolio</a>
+            <a href="index.html" class="nav-logo">Àang Portfolio</a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
@@ -18,7 +21,7 @@
                 <li><a href="reflections.html" class="nav-link">Reflections</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" aria-label="Toggle Navigation">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -27,131 +30,422 @@
     </nav>
 
     <main class="page-container">
-        <section class="page-header">
-            <h1>Projects & Works</h1>
-            <p>A showcase of my academic and personal projects at Universitas Airlangga & SMAN 2 Surabaya (State Senior High School)</p>
-        </section>
+        <header class="page-header">
+            <div class="header-badge">Curated Archive</div>
+            <h1>Featured Works & Projects</h1>
+            <p>A selective showcase of production software, user-centered interface systems, and visual communication initiatives.</p>
+        </header>
+
+        <!-- Category Filter Tabs -->
+        <nav class="project-filters" aria-label="Project Categories">
+            <button class="filter-btn active" data-filter="all">All Works <span class="filter-count">9</span></button>
+            <button class="filter-btn" data-filter="dev">Web & Mobile <span class="filter-count">4</span></button>
+            <button class="filter-btn" data-filter="uiux">UI/UX Design <span class="filter-count">2</span></button>
+            <button class="filter-btn" data-filter="visual">Visual & Branding <span class="filter-count">3</span></button>
+        </nav>
 
         <section class="projects-grid">
-            <!-- Project 1 -->
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="images/project 1.png" alt="Project 1">
+            <!-- Project 1 (Featured Flagship) -->
+            <article class="project-card featured" data-category="dev">
+                <div class="project-image-wrapper">
+                    <div class="project-browser-bar">
+                        <span class="browser-dot red"></span>
+                        <span class="browser-dot yellow"></span>
+                        <span class="browser-dot green"></span>
+                        <span class="browser-url">wani.bpskotasurabaya.com</span>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/project 9.png" alt="Multi-Agent WhatsApp Helpdesk & CRM Platform – BPS Kota Surabaya" loading="lazy">
+                    </div>
                 </div>
                 <div class="project-content">
-                    <h3>AS CAFE </h3>
+                    <div class="project-meta">
+                        <span class="project-badge">Internship Project • Full-Stack & DevOps</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h2 class="project-title">Multi-Agent WhatsApp Helpdesk & CRM Platform</h2>
+                    <p class="project-client">BPS Kota Surabaya • IPDS Division (Integrasi Pengolahan dan Diseminasi Statistik)</p>
                     <p class="project-description">
-                       A web application designed to simplify the process for customers to order menu items and make table reservations online. The project includes a customer-facing front-end and an admin back-end for managing cafe data. Built using a combination of HTML, CSS, and JavaScript, this project demonstrates skills in static web development and interactive functionality, including transaction simulations and local data management using localStorage.
+                        Developed during my software engineering internship in the IPDS Division at BPS Kota Surabaya. Engineered a high-availability customer service ticketing platform with multi-operator routing, real-time bidirectional Socket.IO message streaming, reverse proxy cloud architecture, and persistent ticket assignment states to streamline public statistical dissemination.
                     </p>
                     <div class="project-tags">
-                        <span class="tag">Web Development</span>
-                        <span class="tag">Full-Stack Development</span>
-                        <span class="tag">Cafe Management System</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Socket.IO</span>
+                        <span class="tag">WhatsApp API</span>
+                        <span class="tag">CRM Platform</span>
+                        <span class="tag">Cloud Deployment</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/Anggaaa2006/AS-CAFE" target="_blank" class="project-link">📁 View on Github  </a>
-                        <a href="https://youtu.be/UcZDJdTfwGc?si=jEcxkW8b0WYOzXQO" target="_blank" class="project-link">🎥 Watch Video</a>
+                        <a href="https://wani.bpskotasurabaya.com/" target="_blank" rel="noopener noreferrer" class="project-link primary">
+                            <span>Live Production</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                        </a>
                     </div>
                 </div>
             </article>
 
-            <!-- Project 2 -->
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="images/project 2.png" alt="Project 2">
+            <!-- Project 2: eSurvey Usaha & Statistik Keluarga BPS Kota Surabaya -->
+            <article class="project-card" data-category="dev" id="esurvey">
+                <div class="project-image-wrapper">
+                    <div class="project-browser-bar">
+                        <span class="browser-dot red"></span>
+                        <span class="browser-dot yellow"></span>
+                        <span class="browser-dot green"></span>
+                        <span class="browser-url">esurveyusaha.bpskotasurabaya.com</span>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/esurvey-preview.png" alt="eSurvey Usaha & Statistik Keluarga – BPS Kota Surabaya" loading="lazy">
+                    </div>
                 </div>
                 <div class="project-content">
-                    <h3>Bill Buddy: Bill Management & Payment Reminder App
-</h3>
+                    <div class="project-meta">
+                        <span class="project-badge">Internship Flagship • Full-Stack & GIS Mapping</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h2 class="project-title">eSurvey Usaha &amp; Statistik Keluarga Platform</h2>
+                    <p class="project-client">BPS Kota Surabaya • IPDS Division (Integrasi Pengolahan dan Diseminasi Statistik)</p>
                     <p class="project-description">
-                       A mobile application developed with Flutter to help users track and manage their bills. The app leverages Firebase Firestore for real-time data storage, Firebase Authentication for user sign-in, and Firebase Messaging along with flutter_local_notifications to send timely payment reminders. This project showcases my expertise in cross-platform development and backend service integration.
+                        Digital statistical enumeration and survey management platform engineered for Badan Pusat Statistik (BPS) Kota Surabaya. Built with an 8-stage enterprise questionnaire workflow (Surabaya geospatial validation, legal verification, KBLI industrial activity classification, manpower disaggregation, and financial reporting), unique tokenized PIC respondent access, interactive Leaflet GIS geolocation mapping, Laravel REST API backend, Next.js frontend, and containerized Docker architecture.
                     </p>
                     <div class="project-tags">
-                        <span class="tag">Mobile Application</span>
-                        <span class="tag">Firebase</span>
-                        <span class="tag">Real-time Data Storage</span>
-                        <span class="tag">Authentication</span>
+                        <span class="tag">Next.js 16</span>
+                        <span class="tag">Laravel 11</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Leaflet GIS</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Docker</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/Anggaaa2006/MobileAPP" target="_blank" class="project-link">📁 View on Github</a>
-                        <a href="https://youtu.be/5aUbUH9jzl4?si=BaIvsbFJh2j-kh1O" target="_blank" class="project-link">🎥 Watch Video</a>
+                        <a href="https://esurveyusaha.bpskotasurabaya.com/" target="_blank" rel="noopener noreferrer" class="project-link primary">
+                            <span>Live Production</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                        </a>
                     </div>
                 </div>
             </article>
 
             <!-- Project 3 -->
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="images/project 3.png" alt="Project 3">
+            <article class="project-card" data-category="dev">
+                <div class="project-image-wrapper">
+                    <div class="project-browser-bar">
+                        <span class="browser-dot red"></span>
+                        <span class="browser-dot yellow"></span>
+                        <span class="browser-dot green"></span>
+                        <span class="browser-url">kawisan-digital.vercel.app</span>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/project 6.png" alt="KAWISAN-DIGITAL Portal UMKM" loading="lazy">
+                    </div>
                 </div>
                 <div class="project-content">
-                    <h3>Blibli E-commerce Platform: UI/UX Redesign Concept</h3>
+                    <div class="project-meta">
+                        <span class="project-badge">Web Platform</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h2 class="project-title">KAWISAN-DIGITAL — Integrated Village MSME Portal</h2>
+                    <p class="project-client">Community Empowerment Initiative — Kawisanyar</p>
                     <p class="project-description">
-                        A foundational project from the Information System Analysis and Design course (Semester 2) focused on creating a modern, user-friendly interface for a major Indonesian e-commerce site.
-                        Objective: To improve the user experience and visual hierarchy of key user entry points (Landing Page, Login, and Homepage).
-                        Skills Applied: Information Architecture, Wireframing, Prototyping Tools (Figma/Sketch), and Visual Hierarchy
+                        Digital commerce and directory hub engineered to elevate market outreach for grassroots local enterprises in Kawisanyar, East Java. Built with high-speed catalog discovery, responsive storefront cards, and SEO-optimized business profiles.
                     </p>
                     <div class="project-tags">
-                        <span class="tag">UI/UX Design</span>
-                        <span class="tag">Visual Hierarchy</span>
-                        <span class="tag">E-commerce</span>
+                        <span class="tag">React.js</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Tailwind CSS</span>
+                        <span class="tag">Vercel</span>
+                        <span class="tag">SEO</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://www.figma.com/design/YpktiELOJvssY4DKXPk639/Desain_Blibli?node-id=0-1&t=C0XQnrK0rF5OpKjJ-1" target="_blank" class="project-link">📁 View on figma</a>
-                       
+                        <a href="https://kawisan-digital.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link primary">
+                            <span>Visit Platform</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card" data-category="dev">
+                <div class="project-image-wrapper">
+                    <div class="project-browser-bar">
+                        <span class="browser-dot red"></span>
+                        <span class="browser-dot yellow"></span>
+                        <span class="browser-dot green"></span>
+                        <span class="browser-url">flutter.app / billbuddy</span>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/project 2.png" alt="Bill Buddy Mobile App" loading="lazy">
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-badge">Mobile App</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h2 class="project-title">Bill Buddy: Bill Management & Reminder</h2>
+                    <p class="project-client">Cross-Platform Utility</p>
+                    <p class="project-description">
+                        Cross-platform mobile application engineered with Flutter to streamline recurring payment tracking. Synchronizes expense states in real time through Firebase Firestore and executes scheduled background notifications for payment deadlines.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Firebase Firestore</span>
+                        <span class="tag">Auth</span>
+                        <span class="tag">Push Notifications</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Anggaaa2006/MobileAPP" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            <span>Repository</span>
+                        </a>
+                        <a href="https://youtu.be/5aUbUH9jzl4?si=BaIvsbFJh2j-kh1O" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                            <span>Demo Video</span>
+                        </a>
                     </div>
                 </div>
             </article>
 
             <!-- Project 4 -->
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="images/project 4.png" alt="Project 4">
+            <article class="project-card" data-category="dev">
+                <div class="project-image-wrapper">
+                    <div class="project-browser-bar">
+                        <span class="browser-dot red"></span>
+                        <span class="browser-dot yellow"></span>
+                        <span class="browser-dot green"></span>
+                        <span class="browser-url">github.com / AS-CAFE</span>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/project 1.png" alt="AS CAFE Web App" loading="lazy">
+                    </div>
                 </div>
                 <div class="project-content">
-                    <h3>Environmental Awareness Poster Design</h3>
+                    <div class="project-meta">
+                        <span class="project-badge">Web Application</span>
+                        <span class="project-year">2023</span>
+                    </div>
+                    <h2 class="project-title">AS CAFE: Order & Table Reservation</h2>
+                    <p class="project-client">F&B Management System</p>
                     <p class="project-description">
-                        A poster designed for a school-wide competition focusing on environmental sustainability and the importance of early tree planting.
-                         Award: Achieved 3rd Place in the school-wide design competition (High School, Grade 10).
-                         Skills Applied: Visual Communication, Graphic Design, and Conceptualizing a simple yet impactful educational message.
+                        Full-stack ordering and table reservation web app designed for customer dining and staff back-office administration. Manages real-time item selection, booking simulation, and transactional data persistence using localStorage.
                     </p>
                     <div class="project-tags">
-                        <span class="tag">Design</span>
-                        <span class="tag">Academic</span>
-                        
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML5 / CSS3</span>
+                        <span class="tag">LocalStorage</span>
+                        <span class="tag">UI Logic</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://drive.google.com/file/d/18wsua5xub6AFYhB5hpwdGrieuditw0wq/view?usp=drive_link" target="_blank" class="project-link">📁 View Slides</a>
+                        <a href="https://github.com/Anggaaa2006/AS-CAFE" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            <span>Repository</span>
+                        </a>
+                        <a href="https://youtu.be/UcZDJdTfwGc?si=jEcxkW8b0WYOzXQO" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                            <span>Walkthrough</span>
+                        </a>
                     </div>
                 </div>
             </article>
 
             <!-- Project 5 -->
-            <article class="project-card">
-                <div class="project-image">
-                    <img src="images/project 5.png" alt="Project 5">
+            <article class="project-card" data-category="uiux">
+                <div class="project-image-wrapper">
+                    <div class="project-browser-bar">
+                        <span class="browser-dot red"></span>
+                        <span class="browser-dot yellow"></span>
+                        <span class="browser-dot green"></span>
+                        <span class="browser-url">figma.com / inhealth-ai</span>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/project 5.png" alt="InHealth AI Diagnosis UI/UX" loading="lazy">
+                    </div>
                 </div>
                 <div class="project-content">
-                    <h3>Sistem Diagnosis Penyakit Berbasis AI (Backward Chaining)</h3>
+                    <div class="project-meta">
+                        <span class="project-badge">UI/UX Case Study</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h2 class="project-title">InHealth: AI Diagnosis Expert System</h2>
+                    <p class="project-client">AI Practicum — Universitas Airlangga</p>
                     <p class="project-description">
-                        I contributed to the UI/UX Design and visual conceptualization of InHealth, an AI-Based Expert System developed for the University's Final AI Practicum. While the core logic utilized Backward Chaining, my role was to translate this complex AI process into a user-friendly Chatbot interface, ensuring clear user flow from the homepage to the final diagnosis result, demonstrating my skills in UI/UX Design and Visual Communication.
+                        Complete UI/UX design and interaction architecture for an AI clinical assessment platform running on Backward Chaining logic. Transformed algorithmic decision trees into an accessible diagnostic assistant with clear step-by-step triage.
                     </p>
                     <div class="project-tags">
-                        <span class="tag">UI/UX Design</span>
-                        <span class="tag">Prototyping</span>
+                        <span class="tag">Figma</span>
                         <span class="tag">User-Centered Design</span>
+                        <span class="tag">HealthTech UI</span>
+                        <span class="tag">Wireframing</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://www.figma.com/design/jFj01RjFr3ooIWRE8xdTIh/Sistem-Informasi-Penyakit--Community-?node-id=0-1&t=1Ie8eEsdidARTeNM-1" target="_blank" class="project-link">📁 View on figma</a>
-                        
+                        <a href="https://www.figma.com/design/jFj01RjFr3ooIWRE8xdTIh/Sistem-Informasi-Penyakit--Community-?node-id=0-1&t=1Ie8eEsdidARTeNM-1" target="_blank" rel="noopener noreferrer" class="project-link primary">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg>
+                            <span>Figma Prototype</span>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                        </a>
                     </div>
                 </div>
             </article>
+
+            <!-- Project 6 -->
+            <article class="project-card" data-category="uiux">
+                <div class="project-image-wrapper">
+                    <div class="project-browser-bar">
+                        <span class="browser-dot red"></span>
+                        <span class="browser-dot yellow"></span>
+                        <span class="browser-dot green"></span>
+                        <span class="browser-url">figma.com / blibli-redesign</span>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/project 3.png" alt="Blibli E-Commerce UI/UX Redesign" loading="lazy">
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-badge">UI/UX Redesign</span>
+                        <span class="project-year">2023</span>
+                    </div>
+                    <h2 class="project-title">Blibli E-Commerce Platform Modernization</h2>
+                    <p class="project-client">Information System Analysis & Design</p>
+                    <p class="project-description">
+                        UX evaluation and visual hierarchy overhaul focusing on primary consumer landing points, authentication gateways, and catalog browsing. Enhanced mobile touch targets and optimized information grouping for higher product discovery.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Figma</span>
+                        <span class="tag">Information Architecture</span>
+                        <span class="tag">Visual Hierarchy</span>
+                        <span class="tag">E-Commerce</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.figma.com/design/YpktiELOJvssY4DKXPk639/Desain_Blibli?node-id=0-1&t=C0XQnrK0rF5OpKjJ-1" target="_blank" rel="noopener noreferrer" class="project-link primary">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg>
+                            <span>Figma Prototype</span>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 7 -->
+            <article class="project-card" data-category="visual">
+                <div class="project-image-wrapper">
+                    <div class="project-browser-bar">
+                        <span class="browser-dot red"></span>
+                        <span class="browser-dot yellow"></span>
+                        <span class="browser-dot green"></span>
+                        <span class="browser-url">kawisanyar-herbal.vercel.app</span>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/project 7.png" alt="Kawisan Smart Herbal Corner" loading="lazy">
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-badge">Brand & Packaging</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <h2 class="project-title">Kawisan Smart Herbal Corner: TOGA Innovation</h2>
+                    <p class="project-client">Community Sustainable Initiative</p>
+                    <p class="project-description">
+                        Comprehensive brand identity, packaging design system, and digital presence formulated for community-manufactured organic soap products derived from indigenous family medicinal plants (TOGA).
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Packaging Design</span>
+                        <span class="tag">Brand Identity</span>
+                        <span class="tag">Sustainability</span>
+                        <span class="tag">Community</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://kawisanyar-smart-herbal-corner.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link primary">
+                            <span>Visit Showcase</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 8 -->
+            <article class="project-card" data-category="visual">
+                <div class="project-image-wrapper">
+                    <div class="project-browser-bar">
+                        <span class="browser-dot red"></span>
+                        <span class="browser-dot yellow"></span>
+                        <span class="browser-dot green"></span>
+                        <span class="browser-url">editorial / env-awareness.pdf</span>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/project 4.png" alt="Environmental Awareness Poster Campaign" loading="lazy">
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-badge">Visual Communication</span>
+                        <span class="project-year">2023</span>
+                    </div>
+                    <h2 class="project-title">Environmental Awareness Advocacy Campaign</h2>
+                    <p class="project-client">Academic Visual Communication</p>
+                    <p class="project-description">
+                        Visual communication campaign utilizing typography contrast and data-driven infographics to communicate ecological challenges. Crafted for high-retention public understanding across educational channels.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Editorial Design</span>
+                        <span class="tag">Typography</span>
+                        <span class="tag">Infographics</span>
+                        <span class="tag">Data Visualization</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/18wsua5xub6AFYhB5hpwdGrieuditw0wq/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                            <span>View Slides</span>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 9 -->
+            <article class="project-card" data-category="visual">
+                <div class="project-image-wrapper">
+                    <div class="project-browser-bar">
+                        <span class="browser-dot red"></span>
+                        <span class="browser-dot yellow"></span>
+                        <span class="browser-dot green"></span>
+                        <span class="browser-url">editorial / personal-brand.pdf</span>
+                    </div>
+                    <div class="project-image">
+                        <img src="images/project 8.png" alt="Self-Introduction Personal Brand Poster" loading="lazy">
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-badge">Editorial & Identity</span>
+                        <span class="project-year">2023</span>
+                    </div>
+                    <h2 class="project-title">Self-Introduction & Personal Brand Infographic</h2>
+                    <p class="project-client">Personal Identity Design</p>
+                    <p class="project-description">
+                        Deep visual synthesis communicating personal professional identity through structured infographics. Integrates INTJ personality metrics and Johari Window self-reflection into a coherent editorial layout.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Infographic Design</span>
+                        <span class="tag">Visual Hierarchy</span>
+                        <span class="tag">Editorial Layout</span>
+                        <span class="tag">Brand Strategy</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/1yLpfN_sCcIU_1d68pmxejaMlg3t75bmq/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                            <span>View Poster</span>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 Àäng Portfolio. All rights reserved.</p>
+        <p>&copy; 2026 Àang Portfolio. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

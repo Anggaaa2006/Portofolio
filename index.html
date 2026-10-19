@@ -1,15 +1,18 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Àäng Portfolio - Software Engineering &amp; Analytics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=3.8">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">My Portfolio</a>
+            <a href="index.html" class="nav-logo">Àang Portfolio</a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link active">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
@@ -27,51 +30,262 @@
     </nav>
 
     <main class="home-container">
+        <!-- Hero Section with 3D Interactive Stage -->
         <section class="hero-section">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1 class="hero-title">Welcome to My Portfolio</h1>
-                    <p class="hero-subtitle">Informatic Engineering Student at Universitas Airlangga</p>
-                    <blockquote class="hero-quote">
-                        "The future belongs to those who believe in the beauty of their dreams."
-                        <span class="quote-author">- Eleanor Roosevelt</span>
-                    </blockquote>
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span> Full-Stack Developer &amp; Informatics Student
+                    </div>
+                    <h1 class="hero-title">Crafting Purpose-Driven Software &amp; Digital Experiences.</h1>
+                    <p class="hero-subtitle">Hi, I'm Awaulangga Dwi Ariyanto — an Informatics Engineering student at Universitas Airlangga specializing in scalable web architectures, cross-platform mobile apps, and refined UI/UX design systems.</p>
                     <p class="hero-intro">
-                    Entering my 5th semester as an Informatic Engineering student, I am dedicated to building user-centered solutions, combining my passion for UI/UX design and creative visual communication with strong technical implementation. This portfolio showcases my full spectrum of work, from designing impactful posters to developing functional software and leading organizational projects.
+                        Entering my 7th semester at Universitas Airlangga (D4 Teknik Informatika), I bridge engineering rigor with human-centered product thinking. From architecting high-availability production web systems and responsive mobile applications to authoring analytical essays on technology and society, my work centers on solving complex problems with clarity, craft, and care.
                     </p>
+                    
+                    <div class="hero-tech-strip">
+                        <span class="tech-strip-label">CORE TOOLKIT //</span>
+                        <div class="tech-strip-pills">
+                            <span class="tech-micro-pill">Next.js 16</span>
+                            <span class="tech-micro-pill">Laravel 11</span>
+                            <span class="tech-micro-pill">Flutter</span>
+                            <span class="tech-micro-pill">React.js</span>
+                            <span class="tech-micro-pill">TypeScript</span>
+                            <span class="tech-micro-pill">Node.js</span>
+                            <span class="tech-micro-pill">Tailwind CSS</span>
+                            <span class="tech-micro-pill">Docker</span>
+                            <span class="tech-micro-pill">Figma</span>
+                            <span class="tech-micro-pill">Canva</span>
+                        </div>
+                    </div>
+
                     <div class="hero-buttons">
-                        <a href="about.html" class="btn btn-primary">Learn More About Me</a>
-                        <a href="projects.html" class="btn btn-secondary">View My Work</a>
+                        <a href="projects.html" class="btn btn-primary">Explore My Work (10+)</a>
+                        <a href="about.html" class="btn btn-secondary">About My Journey</a>
+                        <a href="resume.html" class="btn btn-secondary">View Resume</a>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <img src="images/profile.jpg" alt="Profile Photo">
+
+                <!-- 3D Interactive Stage with Suspended Satellite Chips -->
+                <div class="hero-3d-stage" id="homeHeroStage">
+                    <div class="hero-glass-deck" id="homeGlassDeck">
+                        <div class="deck-glare"></div>
+                        <div class="deck-header">
+                            <span class="deck-chip-mono">PORTFOLIO // 2024</span>
+                            <span class="deck-status-live">
+                                <span class="deck-status-dot"></span> OPEN TO WORK
+                            </span>
+                        </div>
+                        <div class="deck-photo-frame">
+                            <img src="images/Profil Photo.jpeg" alt="Awaulangga Dwi Ariyanto - Software Engineer">
+                        </div>
+                        <div class="deck-footer">
+                            <h2 class="deck-name">Awaulangga Dwi Ariyanto</h2>
+                            <p class="deck-role">Software Engineer &amp; UI/UX Designer</p>
+                            <div class="deck-meta-grid">
+                                <div class="deck-meta-item">
+                                    <span class="deck-meta-label">EDUCATION</span>
+                                    <span class="deck-meta-val">UNAIR Informatics</span>
+                                </div>
+                                <div class="deck-meta-item">
+                                    <span class="deck-meta-label">FOCUS</span>
+                                    <span class="deck-meta-val">Web, Mobile &amp; UI/UX</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Top Suspended Satellite Chip: Full-Stack & Mobile -->
+                    <div class="floating-chip chip-top" id="chipTop">
+                        <div class="chip-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <div class="chip-text">
+                            <span class="chip-title">FULL-STACK &amp; MOBILE</span>
+                            <span class="chip-sub">Next.js • Flutter • Laravel</span>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Suspended Satellite Chip: Creative & Analytical -->
+                    <div class="floating-chip chip-bottom" id="chipBottom">
+                        <div class="chip-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                <path d="M2 12h20"></path>
+                            </svg>
+                        </div>
+                        <div class="chip-text">
+                            <span class="chip-title">CREATIVE &amp; ANALYTICAL</span>
+                            <span class="chip-sub">UI/UX Design • Kompasiana Writer</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="highlights-section">
-            <h2 class="section-title">Quick Highlights</h2>
-            <div class="highlights-grid">
-                <div class="highlight-card">
-                    <div class="highlight-icon">🎓</div>
-                    <h3>Education</h3>
-                    <p>Universitas Airlangga</p>
+        <!-- 3D Bento Matrix Showcase (The 4 Pillars of Craft) -->
+        <section class="home-showcase-section">
+            <div class="home-bento-header">
+                <span class="bento-overline">AREAS OF EXPERTISE &amp; MULTIDISCIPLINARY WORK</span>
+                <h2 class="bento-title">Holistic Engineering &amp; Creative Foundations</h2>
+                <p class="bento-lead">A balanced overview spanning full-stack web platforms, cross-platform mobile apps, intuitive UI/UX design systems, and published analytical commentary.</p>
+            </div>
+
+            <div class="home-bento-grid">
+                <!-- Bento Card 1: Full-Stack Web & Distributed Systems -->
+                <div class="home-card">
+                    <span class="card-micro-badge">WEB ARCHITECTURE</span>
+                    <h3 class="card-title">Full-Stack Web &amp; Distributed Systems</h3>
+                    <p class="card-lead">Engineering resilient, end-to-end web architectures with modern frameworks. Experienced in real-time bidirectional messaging, secure REST APIs, and containerized deployments.</p>
+                    <ul class="card-bullet-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Real-time WebSocket streaming, event-driven queues, and multi-user live synchronization.</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Enterprise RESTful APIs built with Laravel 11 and Node.js with relational schema design.</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Modern component-driven frontends built with Next.js 16 (React 19), TypeScript, and TailwindCSS.</span>
+                        </li>
+                    </ul>
+                    <a href="projects.html?filter=dev" class="card-bottom-link">
+                        Explore Web Projects (7+)
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
                 </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">💼</div>
-                    <h3>Projects</h3>
-                    <p>5 Completed Works</p>
+
+                <!-- Bento Card 2: Cross-Platform Mobile Engineering -->
+                <div class="home-card">
+                    <span class="card-micro-badge">MOBILE SYSTEMS</span>
+                    <h3 class="card-title">Cross-Platform Mobile Apps with Flutter</h3>
+                    <p class="card-lead">Building reactive, aesthetically refined mobile experiences for Android and iOS using Flutter and Dart, backed by clean architecture and real-time cloud data.</p>
+                    <ul class="card-bullet-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Clean architectural patterns (MVC / Clean Architecture) with reactive state management.</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Real-time cloud sync, persistent local storage, and Firebase Authentication/Firestore.</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Fluid native micro-interactions, responsive mobile viewports, and tactile UI aesthetics.</span>
+                        </li>
+                    </ul>
+                    <a href="projects.html" class="card-bottom-link">
+                        Explore Mobile Works
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
                 </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">🚀</div>
-                    <h3>Skills</h3>
-                    <p>Diverse & Growing</p>
+
+                <!-- Bento Card 3: UI/UX & Digital Product Design -->
+                <div class="home-card">
+                    <span class="card-micro-badge">PRODUCT &amp; INTERFACE DESIGN</span>
+                    <h3 class="card-title">Intuitive UI/UX &amp; Design Systems</h3>
+                    <p class="card-lead">Translating complex domain logic into effortless, accessible, and human-centered digital interfaces through structured prototyping and design systems.</p>
+                    <ul class="card-bullet-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Information Architecture, interactive wireframes, and component-driven Figma &amp; Canva visual assets.</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Scalable design token architectures: consistent color hierarchies, micro-spacing, and typography.</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>User journey mapping and usability-focused design workflows ready for developer handoff.</span>
+                        </li>
+                    </ul>
+                    <a href="projects.html?filter=design" class="card-bottom-link">
+                        View Design Systems
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
                 </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">🎯</div>
-                    <h3>Goals</h3>
-                    <p>Continuous Learning</p>
+
+                <!-- Bento Card 4: Analytical Voice & Organizational Leadership -->
+                <div class="home-card">
+                    <span class="card-micro-badge">PERSPECTIVE &amp; LEADERSHIP</span>
+                    <h3 class="card-title">Critical Writing &amp; Student Operations</h3>
+                    <p class="card-lead">Combining engineering rigor with critical analytical perspective, public writing, and collaborative human resource development in university governance.</p>
+                    <ul class="card-bullet-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>2+ Years Freelance Analytical Writer on Kompasiana covering healthcare policy, digital ethics &amp; society.</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>HR Development Staff at HIMTI UNAIR (2023–2024), orchestrating member onboarding &amp; organizational health.</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                            <span>Cross-functional communication bridge uniting engineering logic with human stakeholders.</span>
+                        </li>
+                    </ul>
+                    <a href="reflections.html" class="card-bottom-link">
+                        Read Perspectives &amp; Reflections
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Bento Card 5: Verified Milestone Metrics Bar (Spans 2 Columns) -->
+                <div class="home-metrics-bar">
+                    <div class="metric-pill-box">
+                        <div class="metric-val">10+</div>
+                        <div class="metric-desc">Completed Works &amp; Systems</div>
+                    </div>
+                    <div class="metric-pill-box">
+                        <div class="metric-val">Sem 7</div>
+                        <div class="metric-desc">D4 Teknik Informatika UNAIR</div>
+                    </div>
+                    <div class="metric-pill-box">
+                        <div class="metric-val">2+ Yrs</div>
+                        <div class="metric-desc">Kompasiana Analytical Writing</div>
+                    </div>
+                    <div class="metric-pill-box">
+                        <div class="metric-val">Industry</div>
+                        <div class="metric-desc">Production Deployed Experience</div>
+                    </div>
                 </div>
             </div>
         </section>
