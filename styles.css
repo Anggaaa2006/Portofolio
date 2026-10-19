@@ -2886,6 +2886,42 @@ h1, h2, h3, h4 {
   color: #60a5fa;
 }
 
+.insight-pub-links {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.insight-pub-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.42rem 0.85rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #f1f5f9;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.insight-pub-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
+.insight-pub-btn.substack:hover {
+  background: rgba(255, 103, 25, 0.15);
+  border-color: rgba(255, 103, 25, 0.45);
+  color: #ff9457;
+}
+
 /* 2. Technical & Leadership Retrospective Matrix */
 .retro-matrix {
   display: grid;
